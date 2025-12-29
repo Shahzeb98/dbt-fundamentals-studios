@@ -1,2 +1,44 @@
 # dbt-fundamentals-studios
 dbt Fundamentals (dbt studios) course walkthrough
+https://learn.getdbt.com/courses/dbt-fundamentals
+
+## Building Your First Model
+
+### Learning Objectives
+* Explain what models are in a dbt project.
+* Build your first dbt model.
+* Explain how to apply modularity to analytics with dbt.
+* Modularize your project with the ref function.
+* Review a brief history of modeling paradigms.
+* Identify common naming conventions for tables.
+* Reorganize your project with subfolders.
+
+**Steps:**
+
+1. Initialize a dbt project.
+2. Example models are created after the initialization.
+3. run `dbt run` command to create the models in data platform.
+4. Created `customers.sql` model in dbt.
+
+**Notes:**
+
+1. Models are created as view by default in dbt.
+2. Models can be materialized as tables if mentioned in the model or dbt_project profile.
+3. Priority is given to materialization in the model.
+
+Syntax to config materialization in model:
+{{ config(materialized='...')}}
+
+**above is a jinja function used in dbt.**
+
+#### ref function in dbt
+1. Helps to reference a model in dbt dynamically.
+2. Provide lineage for the model when used in it.
+
+**Notes**
+1. ref provides order of execution when dbt run in called for the model creation.
+2. '+' symbol is used to identify the building process in dbt with using run or build command
+`dbt run --select model` normal run
+`dbt run --select +model` upstream run
+`dbt run --select model+` downstream run
+`dbt run --select +model+` upstream and downstream run
