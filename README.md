@@ -62,3 +62,16 @@ Syntax to config materialization in model:
 * Explain the role of data testing in analytics engineering.
 * Configure and run generic tests in dbt.
 * Write, configure, and run singular tests in dbt.
+
+**Notes**
+* Execute dbt test to run all generic and singular tests in your project.
+* Execute dbt test --select test_type:generic to run only generic tests in your project.
+* Execute dbt test --select test_type:singular to run only singular tests in your project.
+
+## Documentation Basics
+
+* Explain why documentation is crucial for analytics.
+* Understand the documentation features of dbt.
+* Write documentation for models, sources, and columns in .yml files.
+* Write documentation in markdown using doc blocks.
+* View and navigate the lineage graph to understand the dependencies between models.
