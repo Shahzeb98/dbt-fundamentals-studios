@@ -78,3 +78,10 @@ Syntax to config materialization in model:
 * Write documentation for models, sources, and columns in .yml files.
 * Write documentation in markdown using doc blocks.
 * View and navigate the lineage graph to understand the dependencies between models.
+
+## Understanding Deployment
+
+* Understand why it's necessary to deploy your project.
+* Explain the purpose of creating a deployment environment.
+* Schedule a job in dbt.
+* Review the results and artifacts of a scheduled job in dbt.
