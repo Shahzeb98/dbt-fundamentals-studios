@@ -1,5 +1,5 @@
 models:
-  - name: stg_stripe__payment
+  - name: stg_stripe__payments
     columns:
       - name: payment_id
         tests:
@@ -8,7 +8,7 @@ models:
       - name: order_id
         tests:
           - not_null
-      - name: paymentmethod
+      - name: payment_method
       - name: payment_status
       - name: amount
       - name: created_at
