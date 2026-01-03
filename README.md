@@ -42,3 +42,10 @@ Syntax to config materialization in model:
 `dbt run --select +model` upstream run
 `dbt run --select model+` downstream run
 `dbt run --select +model+` upstream and downstream run
+
+## Understanding Sources
+
+* Explain the purpose of sources in dbt.
+* Configure and select from sources in your data platform.
+* View sources in the lineage graph.
+* Check the last time sources were updated and raise warnings if stale.
