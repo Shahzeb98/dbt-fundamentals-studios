@@ -55,3 +55,10 @@ Syntax to config materialization in model:
 * Configure and select from sources in your data platform.
 * View sources in the lineage graph.
 * Check the last time sources were updated and raise warnings if stale.
+
+## Building Tests
+
+* Explain why data testing is crucial for analytics.
+* Explain the role of data testing in analytics engineering.
+* Configure and run generic tests in dbt.
+* Write, configure, and run singular tests in dbt.
