@@ -1,5 +1,6 @@
 # dbt-fundamentals-studios
 dbt Fundamentals (dbt studios) course walkthrough
+
 https://learn.getdbt.com/courses/dbt-fundamentals
 
 ## Building Your First Model
@@ -27,6 +28,7 @@ https://learn.getdbt.com/courses/dbt-fundamentals
 3. Priority is given to materialization in the model.
 
 Syntax to config materialization in model:
+
 {{ config(materialized='...')}}
 
 **above is a jinja function used in dbt.**
@@ -38,9 +40,13 @@ Syntax to config materialization in model:
 **Notes**
 1. ref provides order of execution when dbt run in called for the model creation.
 2. '+' symbol is used to identify the building process in dbt with using run or build command
+
 `dbt run --select model` normal run
+
 `dbt run --select +model` upstream run
+
 `dbt run --select model+` downstream run
+
 `dbt run --select +model+` upstream and downstream run
 
 ## Understanding Sources
