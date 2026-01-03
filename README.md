@@ -1,6 +1,9 @@
 # dbt-fundamentals-studios
 dbt Fundamentals (dbt studios) course walkthrough
 
+dbt package hub: hub.getdbt.com 
+
+Using codegen package to generate sources and models from the data platform to dbt.
 https://learn.getdbt.com/courses/dbt-fundamentals
 
 ## Building Your First Model
