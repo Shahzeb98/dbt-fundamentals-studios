@@ -12,7 +12,7 @@ order_payments as (
         sum (case when payment_status = 'success' then amount end) as amount
 
     from payments
-    group by 1dbt 
+    group by 1
 ),
 
  final as (
@@ -26,5 +26,6 @@ order_payments as (
     from orders
     left join order_payments using (order_id)
 )
+
 
 select * from final
